@@ -1,0 +1,46 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A cool thing made with Glitch">
+
+    <title>htmlpet Setup</title>
+
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>htmlpet Setup</h1>
+      <h2><a href="/patches">version 1.0.0</a></h2>
+    </header>
+
+    <main>
+
+      <p id="dialog">what should your pet be called?</p>
+
+      <form>
+        <label>
+          enter pet name
+          <input name="petname" type="text" maxlength="100" required placeholder="pain">
+        </label>
+        <button type="submit" id="submit-dream">start</button>
+      </form>
+    </main>
+
+    <footer>Powered by <a href="https://glitch.com">Glitch</a><br>Made with ❤ (by Vuk and HelloBoi)</footer>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:2em;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+</html>
