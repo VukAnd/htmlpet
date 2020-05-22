@@ -1,2 +1,13 @@
+version 1.0.2
+buttons now look way more fancy
+
+
+version 1.0.1
+you can now feed your htmlpet
+overfeeding will result in death
+
+pet status has been added
+the following statuses are available: yummy bread (fed), can't handle anymore (almost overfed), what's happening (dying) 
+
 version 1.0.0
 htmlpet exists
