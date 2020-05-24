@@ -6,7 +6,7 @@ var feedmeter = 1;
 try {
   var petname = getCookie("petname");
 } catch {
-  uhOh()
+  uhOh();
 }
 
 if (petname) {
@@ -26,9 +26,10 @@ function killpet() {
   var buttons = document.getElementById("buttons");
   buttons.parentNode.removeChild(buttons);
   document.getElementById("status").innerText = "What's happening?! (●__●)";
-  document.getElementById("name").innerText = petname + " isn't feeling okay...";
-  setCookie("petdead", 1, 1)
-  document.location.href = "https://htmlpet.glitch.me"
+  document.getElementById("name").innerText =
+    petname + " isn't feeling okay...";
+  setCookie("petdead", 1, 1);
+  document.location.href = "https://htmlpet.glitch.me";
 }
 
 function feed() {
@@ -69,23 +70,24 @@ function uhOh() {
 
 function sleep() {
   document.getElementById("status").innerText = "(∪.∪ )...zzz";
-  document.getElementById("awake").style.display = "none"
-  document.getElementById("asleep").style.display = "block"
+  document.getElementById("awake").style.display = "none";
+  document.getElementById("asleep").style.display = "block";
 }
 
 function awaken() {
-  document.getElementById("status").innerText = "(o.o) i had a dream... what if... what if... I am not real?!";
-  document.getElementById("awake").style.display = "block"
-  document.getElementById("asleep").style.display = "none"
+  document.getElementById("status").innerText =
+    "(o.o) i had a dream... what if... what if... I am not real?!";
+  document.getElementById("awake").style.display = "block";
+  document.getElementById("asleep").style.display = "none";
 }
 
 function getCookie(cname) {
   var name = cname + "=";
   var decodedCookie = decodeURIComponent(document.cookie);
-  var ca = decodedCookie.split(';');
-  for(var i = 0; i < ca.length; i++) {
+  var ca = decodedCookie.split(";");
+  for (var i = 0; i < ca.length; i++) {
     var c = ca[i];
-    while (c.charAt(0) == ' ') {
+    while (c.charAt(0) == " ") {
       c = c.substring(1);
     }
     if (c.indexOf(name) == 0) {
@@ -95,9 +97,9 @@ function getCookie(cname) {
   return "";
 }
 
-function setCookie(cname,cvalue,exdays) {
+function setCookie(cname, cvalue, exdays) {
   var d = new Date();
-  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
   var expires = "expires=" + d.toGMTString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
