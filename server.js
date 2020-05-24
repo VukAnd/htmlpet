@@ -23,6 +23,10 @@ app.get("/coffee", (request, response) => {
   response.sendFile(__dirname + "/views/coffee.html");
 });
 
+app.get("/error", (request, response) => {
+  response.sendFile(__dirname + "/views/error.html");
+});
+
 app.get("/patches", (request, response) => {
   response.sendFile(__dirname + "/public/patchnotes.txt");
 });

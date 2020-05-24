@@ -1,13 +1,22 @@
+version 1.1.1
+fixed bug where feeding pet and then 
+letting the pet take a break would result in
+a glitch in the universe
+
+version 1.1.0
+HTMLPET NOW USES COOKIES YEEEEAH POGGERS!!!!!!!!!
+you can also use special characters now
+
 version 1.0.2
 buttons now look way more fancy
-
 
 version 1.0.1
 you can now feed your htmlpet
 overfeeding will result in death
 
 pet status has been added
-the following statuses are available: yummy bread (fed), can't handle anymore (almost overfed), what's happening (dying) 
+the following statuses are available: yummy bread (fed), 
+can't handle anymore (almost overfed), what's happening (dying) 
 
 version 1.0.0
 htmlpet exists

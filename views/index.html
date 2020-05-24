@@ -3,16 +3,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Get your very own pet, powered by JS and HTML (no jQuery here)">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Get your very own pet, powered by JS and HTML (no jQuery here)"
+    />
 
     <title>htmlpet Setup</title>
 
-    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://glitch.com/edit/favicon-app.ico"
+      type="image/x-icon"
+    />
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style.css" />
 
     <!-- import the webpage's client-side javascript file -->
     <script src="/script.js" defer></script>
@@ -20,23 +28,41 @@
   <body>
     <header>
       <h1>htmlpet Setup</h1>
-      <h2><a href="/patches">version 1.0.2</a></h2>
+      <h2><a href="/patches">version 1.1.1, click for patch notes</a></h2>
     </header>
 
     <main>
-
+      <p id="cookiewarn">
+        This website uses cookies!<br />If
+        you don't consent to cookie usage, please leave this site.<br />
+        <button onclick="acceptCooky()">
+          OKAY HIDE THIS FOR 1 DAY</button
+        ><br /><br />
+      </p>
       <p id="dialog">what should your pet be called?</p>
 
-      <form>
+      <form onsubmit="return false">
         <label>
-          enter pet name
-          <input name="petname" type="text" maxlength="100" required placeholder="pain">
+          enter pet name*
+          <input
+            name="petname"
+            type="text"
+            maxlength="100"
+            required
+            placeholder="pain"
+            id="petname"
+          />
+          *there is a length cap (100)
         </label>
-        <button type="submit" id="submit-dream">start</button>
+        <label>this will be stored in a cookie.</label>
+        <button onclick="cookieTime()" id="submit-dream">start</button>
       </form>
     </main>
 
-    <footer>Powered by <a href="https://glitch.com">Glitch</a><br>Made with ❤ (by Vuk and HelloBoi)</footer>
+    <footer>
+      Powered by <a href="https://glitch.com">Glitch</a><br />Made with ❤ (by
+      Vuk and HelloBoi)
+    </footer>
 
     <!-- include the Glitch button to show what the webpage is about and
           to make it easier for folks to view source and remix -->
